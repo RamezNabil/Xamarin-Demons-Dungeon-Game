@@ -1,0 +1,13 @@
+C:\Users\Ramez\source\repos\App15\App15\App15\bin\Release\netstandard2.0\App15.deps.json
+C:\Users\Ramez\source\repos\App15\App15\App15\bin\Release\netstandard2.0\App15.dll
+C:\Users\Ramez\source\repos\App15\App15\App15\bin\Release\netstandard2.0\App15.pdb
+C:\Users\Ramez\source\repos\App15\App15\App15\obj\Release\netstandard2.0\App15.csprojAssemblyReference.cache
+C:\Users\Ramez\source\repos\App15\App15\App15\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\Ramez\source\repos\App15\App15\App15\obj\Release\netstandard2.0\MainMenu.xaml.g.cs
+C:\Users\Ramez\source\repos\App15\App15\App15\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Ramez\source\repos\App15\App15\App15\obj\Release\netstandard2.0\App15.csproj.CoreCompileInputs.cache
+C:\Users\Ramez\source\repos\App15\App15\App15\obj\Release\netstandard2.0\App15.AssemblyInfoInputs.cache
+C:\Users\Ramez\source\repos\App15\App15\App15\obj\Release\netstandard2.0\App15.AssemblyInfo.cs
+C:\Users\Ramez\source\repos\App15\App15\App15\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\Ramez\source\repos\App15\App15\App15\obj\Release\netstandard2.0\App15.dll
+C:\Users\Ramez\source\repos\App15\App15\App15\obj\Release\netstandard2.0\App15.pdb

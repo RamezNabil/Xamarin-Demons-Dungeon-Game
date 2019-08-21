@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App15.MainMenu"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+
+            <StackLayout x:Name="Menu" Padding="0,175,0,175">
+                <Button Text="Tutorial" TextColor="Black" BackgroundColor="Wheat" x:Name="Tutorial" Clicked="Tutorial_Clicked"
+                    VerticalOptions="Start" HorizontalOptions="CenterAndExpand"></Button>
+                <Button Text="Play" TextColor="Black" BackgroundColor="Wheat" x:Name="PlayBTN" Clicked="PlayBTN_Clicked"
+                    VerticalOptions="Fill" HorizontalOptions="CenterAndExpand" Margin="0,100,0,0"></Button>
+            </StackLayout>
+
+            <Grid IsVisible="False" BackgroundColor="Black" x:Name="loading" ColumnSpacing="0" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width ="*"></ColumnDefinition>
+                    <ColumnDefinition Width ="*"></ColumnDefinition>
+                    <ColumnDefinition Width ="*"></ColumnDefinition>
+                    <ColumnDefinition Width ="*"></ColumnDefinition>
+                    <ColumnDefinition Width ="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="l1" BackgroundColor="Green" IsVisible="False" Grid.Row="1" Grid.Column="1" BorderRadius="0" CornerRadius="0"></Button>
+                <Button x:Name="l2" BackgroundColor="Green" IsVisible="False" Grid.Row="1" Grid.Column="2" BorderRadius="0" CornerRadius="0"></Button>
+                <Button x:Name="l3" BackgroundColor="Green" IsVisible="False" Grid.Row="1" Grid.Column="3" BorderRadius="0" CornerRadius="0"></Button>
+            </Grid>
+            
+            <Grid IsVisible="False" BackgroundColor="Black" x:Name="helpgrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.5*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button BackgroundColor="Wheat" Clicked="BackBTN_Clicked" x:Name="BackBTN" Grid.Row="0" Grid.Column="1" HorizontalOptions="EndAndExpand" Image="back.png"></Button>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="1" Grid.Column="0" Image="player.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="This is the Player"></Label>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="2" Grid.Column="0" Image="right.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="2" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="Use arrow keys to move around the dungeon"></Label>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="3" Grid.Column="0" Image="chest.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="3" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="Chests contain Items that will help you in your Adventure"></Label>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="4" Grid.Column="0" Image="smallattack.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="4" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="Use the Sword to Attack all enemies within one block of you. It has a 3 second cooldown"></Label>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="5" Grid.Column="0" Image="gun.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="5" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="Use the Gun to Shoot Bullets up, down, left and right of you. It has a 5 second cooldown"></Label>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="6" Grid.Column="0" Image="ammo.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="6" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="This is the Bullets you have left"></Label>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="7" Grid.Column="0" Image="hp.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="7" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="This is the amount of Health you have"></Label>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="8" Grid.Column="0" Image="smallheal.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="8" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="Use Healing Potions to increase your HP with 50. It has a 5 second cooldown"></Label>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="9" Grid.Column="0" Image="back.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="9" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="Clicking this will take you back to the Main Menu"></Label>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="10" Grid.Column="0" Image="wall.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="10" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="Sometimes you will find Walls blocking the way"></Label>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="11" Grid.Column="0" Image="enemy.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="11" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="Enemies are spread everywhere in the dungeon, Take care not get hit by their flames"></Label>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="12" Grid.Column="0" Image="smallboss.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="12" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="The Bosses have special attacks, Use your weapons to get past them"></Label>
+
+                <Button IsEnabled="False" BackgroundColor="Gray" Grid.Row="13" Grid.Column="0" Image="smalldoor.png"></Button>
+                <Label VerticalTextAlignment="Center" Grid.Row="13" Grid.Column="1" BackgroundColor="Black" TextColor="Aqua" Text="Go through the door to get to the next Level"></Label>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

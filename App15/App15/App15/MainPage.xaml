@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App15"
+             x:Class="App15.MainPage"
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid BackgroundColor="Black" ColumnSpacing="1" RowSpacing="1" Margin="2,2,2,2">
+        <Grid.RowDefinitions>
+            
+            <RowDefinition Height="1.5*"></RowDefinition>
+            
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+        <Button InputTransparent="True" x:Name="HP" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Image="hp.png" Text="100" TextColor="Black" BackgroundColor="Wheat"></Button>
+        <Button InputTransparent="True" x:Name="Ammo" Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Image="ammo.png" Text="20" TextColor="Black" BackgroundColor="Wheat"></Button>
+        <Button InputTransparent="True" x:Name="Potions" Grid.Row="0" Grid.Column="6" Grid.ColumnSpan="3" Image="heal.png" Text="3" TextColor="Black" BackgroundColor="Wheat"></Button>
+        <Button Clicked="BackBTN_Clicked" x:Name="BackBTN" Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="3" Image="back.png" BackgroundColor="Wheat"></Button>
+
+        <Button Clicked="AttackBTN_Clicked" x:Name="AttackBTN" Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="3" Image="attack.png" BackgroundColor="Wheat"></Button>
+        <Button Clicked="GunBTN_Clicked" x:Name="GunBTN" Grid.Row="11" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="3" Image="gun.png" BackgroundColor="Wheat"></Button>
+        <Button Clicked="HealBTN_Clicked" x:Name="HealBTN" Grid.Row="11" Grid.Column="4" Grid.ColumnSpan="2" Grid.RowSpan="3" Image="heal.png" BackgroundColor="Wheat"></Button>
+
+        <Button ClassId="1" Clicked="Movement" x:Name="UpBTN" Grid.Row="11" Grid.Column="8" Grid.ColumnSpan="2" Grid.RowSpan="2" Image="up.png" BackgroundColor="Wheat"></Button>
+        <Button ClassId="2" Clicked="Movement" x:Name="LeftBTN" Grid.Row="11" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="3"  Image="left.png" BackgroundColor="Wheat"></Button>
+        <Button ClassId="3" Clicked="Movement" x:Name="RightBTN" Grid.Row="11" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="3" Image="right.png" BackgroundColor="Wheat"></Button>
+        <Button ClassId="4" Clicked="Movement" x:Name="DownBTN" Grid.Row="13" Grid.Column="8" Grid.ColumnSpan="2" Image="down.png"  BackgroundColor="Wheat"></Button>
+
+
+
+
+
+        <Button Grid.Row="1" Grid.Column="0" IsEnabled="False" BackgroundColor="Black" x:Name="b0" ClassId="0"></Button>
+        <Button Grid.Row="1" Grid.Column="1" IsEnabled="False" BackgroundColor="Black" x:Name="b1" ClassId="1"></Button>
+        <Button Grid.Row="1" Grid.Column="2" IsEnabled="False" BackgroundColor="Black" x:Name="b2" ClassId="2"></Button>
+        <Button Grid.Row="1" Grid.Column="3" IsEnabled="False" BackgroundColor="Black" x:Name="b3" ClassId="3"></Button>
+        <Button Grid.Row="1" Grid.Column="4" IsEnabled="False" BackgroundColor="Black" x:Name="b4" ClassId="4"></Button>
+        <Button Grid.Row="1" Grid.Column="5" IsEnabled="False" BackgroundColor="Black" x:Name="b5" ClassId="5"></Button>
+        <Button Grid.Row="1" Grid.Column="6" IsEnabled="False" BackgroundColor="Black" x:Name="b6" ClassId="6"></Button>
+        <Button Grid.Row="1" Grid.Column="7" IsEnabled="False" BackgroundColor="Black" x:Name="b7" ClassId="7"></Button>
+        <Button Grid.Row="1" Grid.Column="8" IsEnabled="False" BackgroundColor="Black" x:Name="b8" ClassId="8"></Button>
+        <Button Grid.Row="1" Grid.Column="9" IsEnabled="False" BackgroundColor="Black" x:Name="b9" ClassId="9"></Button>
+        <Button Grid.Row="1" Grid.Column="10" IsEnabled="False" BackgroundColor="Black" x:Name="b10" ClassId="10"></Button>
+        <Button Grid.Row="1" Grid.Column="11" IsEnabled="False" BackgroundColor="Black" x:Name="b11" ClassId="11"></Button>
+
+        <Button Grid.Row="2" Grid.Column="0" IsEnabled="False" BackgroundColor="Black" x:Name="b12" ClassId="12"></Button>
+        <Button Grid.Row="2" Grid.Column="1" IsEnabled="False" BackgroundColor="Black" x:Name="b13" ClassId="13"></Button>
+        <Button Grid.Row="2" Grid.Column="2" IsEnabled="False" BackgroundColor="Black" x:Name="b14" ClassId="14"></Button>
+        <Button Grid.Row="2" Grid.Column="3" IsEnabled="False" BackgroundColor="Black" x:Name="b15" ClassId="15"></Button>
+        <Button Grid.Row="2" Grid.Column="4" IsEnabled="False" BackgroundColor="Black" x:Name="b16" ClassId="16"></Button>
+        <Button Grid.Row="2" Grid.Column="5" IsEnabled="False" BackgroundColor="Black" x:Name="b17" ClassId="17"></Button>
+        <Button Grid.Row="2" Grid.Column="6" IsEnabled="False" BackgroundColor="Black" x:Name="b18" ClassId="18"></Button>
+        <Button Grid.Row="2" Grid.Column="7" IsEnabled="False" BackgroundColor="Black" x:Name="b19" ClassId="19"></Button>
+        <Button Grid.Row="2" Grid.Column="8" IsEnabled="False" BackgroundColor="Black" x:Name="b20" ClassId="20"></Button>
+        <Button Grid.Row="2" Grid.Column="9" IsEnabled="False" BackgroundColor="Black" x:Name="b21" ClassId="21"></Button>
+        <Button Grid.Row="2" Grid.Column="10" IsEnabled="False" BackgroundColor="Black" x:Name="b22" ClassId="22"></Button>
+        <Button Grid.Row="2" Grid.Column="11" IsEnabled="False" BackgroundColor="Black" x:Name="b23" ClassId="23"></Button>
+
+        <Button Grid.Row="3" Grid.Column="0" IsEnabled="False" BackgroundColor="Black" x:Name="b24" ClassId="24"></Button>
+        <Button Grid.Row="3" Grid.Column="1" IsEnabled="False" BackgroundColor="Black" x:Name="b25" ClassId="25"></Button>
+        <Button Grid.Row="3" Grid.Column="2" IsEnabled="False" BackgroundColor="Black" x:Name="b26" ClassId="26"></Button>
+        <Button Grid.Row="3" Grid.Column="3" IsEnabled="False" BackgroundColor="Black" x:Name="b27" ClassId="27"></Button>
+        <Button Grid.Row="3" Grid.Column="4" IsEnabled="False" BackgroundColor="Black" x:Name="b28" ClassId="28"></Button>
+        <Button Grid.Row="3" Grid.Column="5" IsEnabled="False" BackgroundColor="Black" x:Name="b29" ClassId="29"></Button>
+        <Button Grid.Row="3" Grid.Column="6" IsEnabled="False" BackgroundColor="Black" x:Name="b30" ClassId="30"></Button>
+        <Button Grid.Row="3" Grid.Column="7" IsEnabled="False" BackgroundColor="Black" x:Name="b31" ClassId="31"></Button>
+        <Button Grid.Row="3" Grid.Column="8" IsEnabled="False" BackgroundColor="Black" x:Name="b32" ClassId="32"></Button>
+        <Button Grid.Row="3" Grid.Column="9" IsEnabled="False" BackgroundColor="Black" x:Name="b33" ClassId="33"></Button>
+        <Button Grid.Row="3" Grid.Column="10" IsEnabled="False" BackgroundColor="Black" x:Name="b34" ClassId="34"></Button>
+        <Button Grid.Row="3" Grid.Column="11" IsEnabled="False" BackgroundColor="Black" x:Name="b35" ClassId="35"></Button>
+
+        <Button Grid.Row="4" Grid.Column="0" IsEnabled="False" BackgroundColor="Black" x:Name="b36" ClassId="36"></Button>
+        <Button Grid.Row="4" Grid.Column="1" IsEnabled="False" BackgroundColor="Black" x:Name="b37" ClassId="37"></Button>
+        <Button Grid.Row="4" Grid.Column="2" IsEnabled="False" BackgroundColor="Black" x:Name="b38" ClassId="38"></Button>
+        <Button Grid.Row="4" Grid.Column="3" IsEnabled="False" BackgroundColor="Black" x:Name="b39" ClassId="39"></Button>
+        <Button Grid.Row="4" Grid.Column="4" IsEnabled="False" BackgroundColor="Black" x:Name="b40" ClassId="40"></Button>
+        <Button Grid.Row="4" Grid.Column="5" IsEnabled="False" BackgroundColor="Black" x:Name="b41" ClassId="41"></Button>
+        <Button Grid.Row="4" Grid.Column="6" IsEnabled="False" BackgroundColor="Black" x:Name="b42" ClassId="42"></Button>
+        <Button Grid.Row="4" Grid.Column="7" IsEnabled="False" BackgroundColor="Black" x:Name="b43" ClassId="43"></Button>
+        <Button Grid.Row="4" Grid.Column="8" IsEnabled="False" BackgroundColor="Black" x:Name="b44" ClassId="44"></Button>
+        <Button Grid.Row="4" Grid.Column="9" IsEnabled="False" BackgroundColor="Black" x:Name="b45" ClassId="45"></Button>
+        <Button Grid.Row="4" Grid.Column="10" IsEnabled="False" BackgroundColor="Black" x:Name="b46" ClassId="46"></Button>
+        <Button Grid.Row="4" Grid.Column="11" IsEnabled="False" BackgroundColor="Black" x:Name="b47" ClassId="47"></Button>
+
+        <Button Grid.Row="5" Grid.Column="0" IsEnabled="False" BackgroundColor="Black" x:Name="b48" ClassId="48"></Button>
+        <Button Grid.Row="5" Grid.Column="1" IsEnabled="False" BackgroundColor="Black" x:Name="b49" ClassId="49"></Button>
+        <Button Grid.Row="5" Grid.Column="2" IsEnabled="False" BackgroundColor="Black" x:Name="b50" ClassId="50"></Button>
+        <Button Grid.Row="5" Grid.Column="3" IsEnabled="False" BackgroundColor="Black" x:Name="b51" ClassId="51"></Button>
+        <Button Grid.Row="5" Grid.Column="5" IsEnabled="False" BackgroundColor="Black" x:Name="b53" ClassId="53"></Button>
+        <Button Grid.Row="5" Grid.Column="7" IsEnabled="False" BackgroundColor="Black" x:Name="b55" ClassId="55"></Button>
+        <Button Grid.Row="5" Grid.Column="8" IsEnabled="False" BackgroundColor="Black" x:Name="b56" ClassId="56"></Button>
+        <Button Grid.Row="5" Grid.Column="9" IsEnabled="False" BackgroundColor="Black" x:Name="b57" ClassId="57"></Button>
+        <Button Grid.Row="5" Grid.Column="10" IsEnabled="False" BackgroundColor="Black" x:Name="b58" ClassId="58"></Button>
+        <Button Grid.Row="5" Grid.Column="11" IsEnabled="False" BackgroundColor="Black" x:Name="b59" ClassId="59"></Button>
+
+        <Button Grid.Row="6" Grid.Column="0" IsEnabled="False" BackgroundColor="Black" x:Name="b60" ClassId="60"></Button>
+        <Button Grid.Row="6" Grid.Column="1" IsEnabled="False" BackgroundColor="Black" x:Name="b61" ClassId="61"></Button>
+        <Button Grid.Row="6" Grid.Column="2" IsEnabled="False" BackgroundColor="Black" x:Name="b62" ClassId="62"></Button>
+        <Button Grid.Row="6" Grid.Column="3" IsEnabled="False" BackgroundColor="Black" x:Name="b63" ClassId="63"></Button>
+        <Button Grid.Row="6" Grid.Column="4" IsEnabled="False" BackgroundColor="Black" x:Name="b64" ClassId="64"></Button>
+        <Button Grid.Row="6" Grid.Column="5" IsEnabled="False" BackgroundColor="Black" x:Name="b65" ClassId="65"></Button>
+        <Button Grid.Row="6" Grid.Column="6" IsEnabled="False" BackgroundColor="Black" x:Name="b66" ClassId="66"></Button>
+        <Button Grid.Row="6" Grid.Column="7" IsEnabled="False" BackgroundColor="Black" x:Name="b67" ClassId="67"></Button>
+        <Button Grid.Row="6" Grid.Column="8" IsEnabled="False" BackgroundColor="Black" x:Name="b68" ClassId="68"></Button>
+        <Button Grid.Row="6" Grid.Column="9" IsEnabled="False" BackgroundColor="Black" x:Name="b69" ClassId="69"></Button>
+        <Button Grid.Row="6" Grid.Column="10" IsEnabled="False" BackgroundColor="Black" x:Name="b70" ClassId="70"></Button>
+        <Button Grid.Row="6" Grid.Column="11" IsEnabled="False" BackgroundColor="Black" x:Name="b71" ClassId="71"></Button>
+
+        <Button Grid.Row="7" Grid.Column="0" IsEnabled="False" BackgroundColor="Black" x:Name="b72" ClassId="72"></Button>
+        <Button Grid.Row="7" Grid.Column="1" IsEnabled="False" BackgroundColor="Black" x:Name="b73" ClassId="73"></Button>
+        <Button Grid.Row="7" Grid.Column="2" IsEnabled="False" BackgroundColor="Black" x:Name="b74" ClassId="74"></Button>
+        <Button Grid.Row="7" Grid.Column="3" IsEnabled="False" BackgroundColor="Black" x:Name="b75" ClassId="75"></Button>
+        <Button Grid.Row="7" Grid.Column="4" IsEnabled="False" BackgroundColor="Black" x:Name="b76" ClassId="76"></Button>
+        <Button Grid.Row="7" Grid.Column="5" IsEnabled="False" BackgroundColor="Black" x:Name="b77" ClassId="77"></Button>
+        <Button Grid.Row="7" Grid.Column="6" IsEnabled="False" BackgroundColor="Black" x:Name="b78" ClassId="78"></Button>
+        <Button Grid.Row="7" Grid.Column="7" IsEnabled="False" BackgroundColor="Black" x:Name="b79" ClassId="79"></Button>
+        <Button Grid.Row="7" Grid.Column="8" IsEnabled="False" BackgroundColor="Black" x:Name="b80" ClassId="80"></Button>
+        <Button Grid.Row="7" Grid.Column="9" IsEnabled="False" BackgroundColor="Black" x:Name="b81" ClassId="81"></Button>
+        <Button Grid.Row="7" Grid.Column="10" IsEnabled="False" BackgroundColor="Black" x:Name="b82" ClassId="82"></Button>
+        <Button Grid.Row="7" Grid.Column="11" IsEnabled="False" BackgroundColor="Black" x:Name="b83" ClassId="83"></Button>
+
+        <Button Grid.Row="8" Grid.Column="0" IsEnabled="False" BackgroundColor="Black" x:Name="b84" ClassId="84"></Button>
+        <Button Grid.Row="8" Grid.Column="1" IsEnabled="False" BackgroundColor="Black" x:Name="b85" ClassId="85"></Button>
+        <Button Grid.Row="8" Grid.Column="2" IsEnabled="False" BackgroundColor="Black" x:Name="b86" ClassId="86"></Button>
+        <Button Grid.Row="8" Grid.Column="3" IsEnabled="False" BackgroundColor="Black" x:Name="b87" ClassId="87"></Button>
+        <Button Grid.Row="8" Grid.Column="4" IsEnabled="False" BackgroundColor="Black" x:Name="b88" ClassId="88"></Button>
+        <Button Grid.Row="8" Grid.Column="5" IsEnabled="False" BackgroundColor="Black" x:Name="b89" ClassId="89"></Button>
+        <Button Grid.Row="8" Grid.Column="6" IsEnabled="False" BackgroundColor="Black" x:Name="b90" ClassId="90"></Button>
+        <Button Grid.Row="8" Grid.Column="7" IsEnabled="False" BackgroundColor="Black" x:Name="b91" ClassId="91"></Button>
+        <Button Grid.Row="8" Grid.Column="8" IsEnabled="False" BackgroundColor="Black" x:Name="b92" ClassId="92"></Button>
+        <Button Grid.Row="8" Grid.Column="9" IsEnabled="False" BackgroundColor="Black" x:Name="b93" ClassId="93"></Button>
+        <Button Grid.Row="8" Grid.Column="10" IsEnabled="False" BackgroundColor="Black" x:Name="b94" ClassId="94"></Button>
+        <Button Grid.Row="8" Grid.Column="11" IsEnabled="False" BackgroundColor="Black" x:Name="b95" ClassId="95"></Button>
+
+        <Button Grid.Row="9" Grid.Column="0" IsEnabled="False" BackgroundColor="Black" x:Name="b96" ClassId="96"></Button>
+        <Button Grid.Row="9" Grid.Column="1" IsEnabled="False" BackgroundColor="Black" x:Name="b97" ClassId="97"></Button>
+        <Button Grid.Row="9" Grid.Column="2" IsEnabled="False" BackgroundColor="Black" x:Name="b98" ClassId="98"></Button>
+        <Button Grid.Row="9" Grid.Column="3" IsEnabled="False" BackgroundColor="Black" x:Name="b99" ClassId="99"></Button>
+        <Button Grid.Row="9" Grid.Column="4" IsEnabled="False" BackgroundColor="Black" x:Name="b100" ClassId="100"></Button>
+        <Button Grid.Row="9" Grid.Column="5" IsEnabled="False" BackgroundColor="Black" x:Name="b101" ClassId="101"></Button>
+        <Button Grid.Row="9" Grid.Column="6" IsEnabled="False" BackgroundColor="Black" x:Name="b102" ClassId="102"></Button>
+        <Button Grid.Row="9" Grid.Column="7" IsEnabled="False" BackgroundColor="Black" x:Name="b103" ClassId="103"></Button>
+        <Button Grid.Row="9" Grid.Column="8" IsEnabled="False" BackgroundColor="Black" x:Name="b104" ClassId="104"></Button>
+        <Button Grid.Row="9" Grid.Column="9" IsEnabled="False" BackgroundColor="Black" x:Name="b105" ClassId="105"></Button>
+        <Button Grid.Row="9" Grid.Column="10" IsEnabled="False" BackgroundColor="Black" x:Name="b106" ClassId="106"></Button>
+        <Button Grid.Row="9" Grid.Column="11" IsEnabled="False" BackgroundColor="Black" x:Name="b107" ClassId="107"></Button>
+
+        <Button Grid.Row="10" Grid.Column="0" IsEnabled="False" BackgroundColor="Black" x:Name="b108" ClassId="108"></Button>
+        <Button Grid.Row="10" Grid.Column="1" IsEnabled="False" BackgroundColor="Black" x:Name="b109" ClassId="109"></Button>
+        <Button Grid.Row="10" Grid.Column="2" IsEnabled="False" BackgroundColor="Black" x:Name="b110" ClassId="110"></Button>
+        <Button Grid.Row="10" Grid.Column="3" IsEnabled="False" BackgroundColor="Black" x:Name="b111" ClassId="111"></Button>
+        <Button Grid.Row="10" Grid.Column="4" IsEnabled="False" BackgroundColor="Black" x:Name="b112" ClassId="112"></Button>
+        <Button Grid.Row="10" Grid.Column="5" IsEnabled="False" BackgroundColor="Black" x:Name="b113" ClassId="113"></Button>
+        <Button Grid.Row="10" Grid.Column="6" IsEnabled="False" BackgroundColor="Black" x:Name="b114" ClassId="114"></Button>
+        <Button Grid.Row="10" Grid.Column="7" IsEnabled="False" BackgroundColor="Black" x:Name="b115" ClassId="115"></Button>
+        <Button Grid.Row="10" Grid.Column="8" IsEnabled="False" BackgroundColor="Black" x:Name="b116" ClassId="116"></Button>
+        <Button Grid.Row="10" Grid.Column="9" IsEnabled="False" BackgroundColor="Black" x:Name="b117" ClassId="117"></Button>
+        <Button Grid.Row="10" Grid.Column="10" IsEnabled="False" BackgroundColor="Black" x:Name="b118" ClassId="118"></Button>
+        <Button Grid.Row="10" Grid.Column="11" IsEnabled="False" BackgroundColor="Black" x:Name="b119" ClassId="119"></Button>
+
+
+        <Button Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Row="5" Grid.Column="4" IsEnabled="False" BackgroundColor="Black" x:Name="b52" ClassId="52"></Button>
+        <Button Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Row="5" Grid.Column="6" IsEnabled="False" BackgroundColor="Black" x:Name="b54" ClassId="54"></Button>
+
+        <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="12" Grid.RowSpan="10" InputTransparent="True" IsVisible="False" x:Name="GameoverBTN" BackgroundColor="Black" Text="GAME OVER!!" TextColor="Red" FontSize="40"></Button>
+        
+    </Grid>
+
+</ContentPage>
